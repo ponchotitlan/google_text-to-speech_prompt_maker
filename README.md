@@ -1,8 +1,8 @@
-# Google Text-To-Speech Batch Prompt File Generator
+# Google Text-To-Speech Batch Prompt File Maker
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-Tool for generating Google Text-To-Speech audio files in batch. It is ideal for offline prompts creation with Google voices for application in offline IVRs
+Are you in the need of IVR prompts, but you have no voice actors? Let Google talk your prompts like a pro! This repository contains a tool for generating Google Text-To-Speech audio files in batch. It is ideal for offline prompts creation with Google voices for application in offline IVRs
 
 In order to use this repository, clone the contents in your local environment with the following console command:
 ```
