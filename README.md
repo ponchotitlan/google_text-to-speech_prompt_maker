@@ -26,10 +26,11 @@ Prepare a CSV document with the texts that you want to convert into prompt audio
     <FILE NAME WITHOUT THE EXTENSION> , <PROMPT TEXT OR COMPLIANT SSML GRAMMAR>
 ```
 
-An example would look like the following:
+An Excel export to CSV format should be enough for rendering a compatible structure, ever since the text within a cell is dumped between quotes if it contains spaces.
+An example of a compliant file with SSML prompts would look like the following:
 ```
-    sample_prompt_01,<speak>Welcome to ACME. How can I help you today?</speak>
-    sample_prompt_02,<speak>Press 1 for sales. <break time=200ms/>Press 2 for Tech Support. <break time=200ms/>Or stay in the line for agent support</speak>
+    sample_prompt_01,"<speak>Welcome to ACME. How can I help you today?</speak>"
+    sample_prompt_02,"<speak>Press 1 for sales. <break time=200ms/>Press 2 for Tech Support. <break time=200ms/>Or stay in the line for agent support</speak>"
     ...
 ```
 
