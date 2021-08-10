@@ -1,5 +1,7 @@
 # Google Text-To-Speech Batch Prompt File Generator
 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
 Tool for generating Google Text-To-Speech audio files in batch. It is ideal for offline prompts creation with Google voices for application in offline IVRs
 
 In order to use this repository, clone the contents in your local environment with the following console command:
