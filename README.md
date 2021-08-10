@@ -6,7 +6,7 @@ Are you in the need of IVR prompts, but you have no voice actors? Let Google tal
 
 In order to use this repository, clone the contents in your local environment with the following console command:
 ```
-git clone https://github.com/ponchotitlan/google_text-to-speech_prompt_generator.git
+git clone https://github.com/ponchotitlan/google_text-to-speech_prompt_maker.git
 ```
 
 Once cloned, follow the next steps for environment setup: 
