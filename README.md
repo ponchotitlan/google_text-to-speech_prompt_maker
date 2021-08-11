@@ -4,7 +4,7 @@ Tool for generating Google Text-To-Speech audio files in batch. It is ideal for 
 
 In order to use this repository, clone the contents in your local environment with the following console command:
 ```
-git clone https://github.com/ponchotitlan/google_text-to-speech_prompt_generator.git
+git clone https://wwwin-github.cisco.com/alfsando/google_text-to-speech_prompt_generator.git
 ```
 
 Once cloned, follow the next steps for environment setup: 
@@ -103,7 +103,7 @@ The command prompt will show logs based on the status of each row:
 The corresponding audio files will be saved in the same location where this script is executed.
 
 ## 5) Encoding for Cisco CVP Audio Elements
-Unfortunately, Google Text-To-Speech service does not support the compulsory 8-bit μ-law encoding. However, there are many online services [such as this one](https://g711.org/) for achieving the aforementioned.
+Unfortunately, Google Text-To-Speech service does not support the compulsory 8-bit μ-law encoding [as per the Python SDK documentation](https://googleapis.dev/python/texttospeech/latest/texttospeech_v1/types.html?highlight=audioencoding#google.cloud.texttospeech_v1.types.AudioEncoding) (I am currently working on a Java version which does support this encoding. This option might be released in the Python SDK in the future). However, there are many online services [such as this one](https://g711.org/) for achieving the aforementioned. [Audacity](https://www.audacityteam.org/) can also be used for the purpose. Follow [this tutorial](https://www.youtube.com/watch?v=CeiJtLs1mJ0) for compatible file conversion steps and [this other tutorial](https://www.howtogeek.com/57571/how-to-quickly-edit-multiple-files-in-audacity/) for batch file processing.
 
 The resulting files can later be uploaded into the Tomcat server for usage within a design in Cisco CallStudio. The route within the CVP Windows Server VM is the following:
 ```
