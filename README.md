@@ -1,10 +1,12 @@
-# Google Text-To-Speech Batch Prompt File Generator
+# Google Text-To-Speech Batch Prompt File Maker
 
-Tool for generating Google Text-To-Speech audio files in batch. It is ideal for offline prompts creation with Google voices for application in offline IVRs
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+Are you in the need of IVR prompts, but you have no voice actors? Let Google talk your prompts like a pro! This repository contains a tool for generating Google Text-To-Speech audio files in batch. It is ideal for offline prompts creation with Google voices for application in IVRs
 
 In order to use this repository, clone the contents in your local environment with the following console command:
 ```
-git clone https://wwwin-github.cisco.com/alfsando/google_text-to-speech_prompt_generator.git
+git clone https://github.com/ponchotitlan/google_text-to-speech_prompt_maker.git
 ```
 
 Once cloned, follow the next steps for environment setup: 
@@ -24,10 +26,11 @@ Prepare a CSV document with the texts that you want to convert into prompt audio
     <FILE NAME WITHOUT THE EXTENSION> , <PROMPT TEXT OR COMPLIANT SSML GRAMMAR>
 ```
 
-An example would look like the following:
+An Excel export to CSV format should be enough for rendering a compatible structure, ever since the text within a cell is dumped between quotes if it contains spaces.
+An example of a compliant file with SSML prompts would look like the following:
 ```
-    sample_prompt_01,<speak>Welcome to ACME. How can I help you today?</speak>
-    sample_prompt_02,<speak>Press 1 for sales. <break time=200ms/>Press 2 for Tech Support. <break time=200ms/>Or stay in the line for agent support</speak>
+    sample_prompt_01,"<speak>Welcome to ACME. How can I help you today?</speak>"
+    sample_prompt_02,"<speak>Press 1 for sales. <break time=200ms/>Press 2 for Tech Support. <break time=200ms/>Or stay in the line for agent support</speak>"
     ...
 ```
 
