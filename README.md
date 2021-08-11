@@ -40,31 +40,28 @@ Additionally, prepare a YAML document with the structure mentioned in the *setup
 csv_prompts_file: <my_csv_file.csv>
 
 google_settings:
-    # ROUTE TO THE JSON KEY ASSOCIATED TO GCP. 
-    IF THE ROUTE HAS SPACES, ADD QUOTES TO THE VALUE
-    JSON_key: <my_service_account.json>
+    # ROUTE TO THE JSON KEY ASSOCIATED TO GCP. IF THE ROUTE HAS SPACES, ADD QUOTES TO THE VALUE
+    JSON_key: <my_key.json>
 
     # PROMPT TYPE. ALLOWED VALUES ARE:
-    # NORMAL (DEFAULT) | SSML
-    prompt_type: NORMAL
+    # normal | SSML
+    prompt_type: SSML
 
     # FILE FORMAT. ALLOWED VALUES ARE:
-    # WAV (DEFAULT) | MP3
-    output_audio_format: WAV
+    # wav | mp3
+    output_audio_format: wav
 
-    # COMPLIANT LANGUAGE CODE. 
-    SEE https://cloud.google.com/text-to-speech/docs/voices FOR COMPATIBLE CODES
+    # COMPLIANT LANGUAGE CODE. SEE https://cloud.google.com/text-to-speech/docs/voices FOR COMPATIBLE CODES
     language_code: es-US
 
-    # COMPLIANT VOICE NAME. 
-    SEE https://cloud.google.com/text-to-speech/docs/voices FOR COMPATIBLE NAMES
+    # COMPLIANT VOICE NAME. SEE https://cloud.google.com/text-to-speech/docs/voices FOR COMPATIBLE NAMES
     voice_name: es-US-Wavenet-C
 
-    # COMPLIANT VOICE GENDER. 
-    SEE https://cloud.google.com/text-to-speech/docs/voices FOR COMPATIBLE GENDERS WITH THE SELECTED VOICE ABOVE
+    # COMPLIANT VOICE GENDER. SEE https://cloud.google.com/text-to-speech/docs/voices FOR COMPATIBLE GENDERS WITH THE SELECTED VOICE ABOVE
     voice_gender: MALE
 
-    # COMPLIANT AUDIO ENCODING
+    # COMPLIANT AUDIO ENCODING. SUPPORTED TYPES ARE:
+    # AUDIO_ENCODING_UNSPECIFIED | LINEAR16 | MP3 | OGG_OPUS
     audio_encoding: LINEAR16
 ```
 
