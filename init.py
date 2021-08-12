@@ -21,8 +21,8 @@ def GetArgs():
    Supports the command-line arguments listed below.
    """
    parser = argparse.ArgumentParser(description= 'Batch prompt generation with Google TTS services')
-   parser.add_argument('-c', '--config', help='YAML file with operation settings')
    parser.add_argument('-b', '--batch', required=False, help='Amount of rows in the CSV file to process at the same time. Suggested max value is 100. Default is 10', type=int, default=10)
+   parser.add_argument('configurationYAML', help='YAML file with operation settings')
    args = parser.parse_args()
    return args
 
@@ -58,7 +58,7 @@ def generate_prompt(FILE_NAME: str, PROMPT_CONTENT: str, OUTPUT_AUDIO_FORMAT:str
 def main():
     ARGS = GetArgs()
     #YAML settings parsing
-    with open(ARGS.config) as f:
+    with open(ARGS.configurationYAML) as f:
         CONFIG = yaml.load(f, Loader = yaml.FullLoader)
         CONFIG_GOOGLE = CONFIG['google_settings']
     #Create instance of handler for gTTS service

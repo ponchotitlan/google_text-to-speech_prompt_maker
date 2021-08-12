@@ -74,14 +74,15 @@ pip install -r requirements.txt
 ## 4) Inline calling
 The usage of the script requires the following inline elements:
 ```
-usage: init.py [-h] [-c CONFIG] [-b BATCH]
+usage: init.py [-h] [-b BATCH] configurationYAML
 
 Batch prompt generation with Google TTS services
 
+positional arguments:
+  configurationYAML     YAML file with operation settings
+
 optional arguments:
   -h, --help            show this help message and exit
-  -c CONFIG, --config CONFIG
-                        YAML file with operation settings
   -b BATCH, --batch BATCH
                         Amount of rows in the CSV file to process at the same
                         time. Suggested max value is 100. Default is 10
@@ -89,7 +90,7 @@ optional arguments:
 
 An example is:
 ```
-py init.py -c setup.yaml
+py init.py setup.yaml
 ```
 
 The command prompt will show logs based on the status of each row:
