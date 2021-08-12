@@ -44,7 +44,7 @@ class ExecHandler:
             )
             return True
         except Exception as ex:
-            print(f'🔥 ERROR authenticating with gTTS API ({str(ex)})')
+            print(f'🔥 ERROR with gTTS API ({str(ex)})')
             return False
     
     def create_prompt(self,FILE_NAME,PROMPT_CONTENT):
